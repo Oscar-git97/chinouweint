@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chinou</title>
+<style>
+  :root {
+    --bg: #0e0e10;
+    --fg: #e8e6e3;
+    --muted: #9a9691;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Bild füllt den sichtbaren Bereich, auch auf Handys mit dynamischer Adressleiste */
+  .hero {
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: env(safe-area-inset-top) 0 0;
+    position: relative;
+  }
+
+  .hero img {
+    max-width: 100%;
+    max-height: 100svh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: calc(1.5rem + env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--fg);
+    opacity: .75;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-decoration: none;
+    animation: bob 2s ease-in-out infinite;
+    text-shadow: 0 1px 6px rgba(0,0,0,.6);
+  }
+
+  @keyframes bob {
+    0%, 100% { transform: translate(-50%, 0); }
+    50%      { transform: translate(-50%, 8px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-hint { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  .text {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem calc(4rem + env(safe-area-inset-bottom));
+  }
+
+  .text h1 {
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+    margin: 0 0 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .text p {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1rem, 3.6vw, 1.125rem);
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="recources/weinendechinoua.jpeg" alt="Weinende Chihuahua" width="1536" height="2048">
+    <a class="scroll-hint" href="#text" aria-label="Nach unten scrollen">&#8595;</a>
+  </section>
+
+  <section class="text" id="text">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+    <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.</p>
+  </section>
+
+</body>
+</html>
