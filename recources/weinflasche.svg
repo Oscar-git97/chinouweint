@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 540" width="200" height="540" role="img" aria-label="Dreiviertel volle Weinflasche, Strichzeichnung">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M84,44 C83,82 85,120 83,152 C81,176 58,198 56,242
+             C54,276 56,300 55,472 C55,484 63,492 75,492
+             L125,492 C137,492 145,484 145,472
+             C144,300 146,276 144,242 C142,198 119,176 117,152
+             C115,120 117,82 116,44 Z"/>
+
+    <path d="M83,44 C92,40 108,40 117,44"/>
+    <path d="M84,70 C93,74 107,74 116,70"/>
+    <path d="M84,98 C93,102 107,102 116,98"/>
+
+    <path d="M58,212 C74,204 90,220 104,212 C118,204 132,218 142,210"
+          stroke-width="3.5"/>
+
+  </g>
+
+  <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.45">
+    <path d="M66,262 l16,-16"/>
+    <path d="M66,306 l30,-30"/>
+    <path d="M66,350 l30,-30"/>
+    <path d="M66,394 l30,-30"/>
+    <path d="M66,438 l30,-30"/>
+    <path d="M78,470 l30,-30"/>
+    <path d="M112,282 l22,-22"/>
+    <path d="M112,326 l22,-22"/>
+    <path d="M112,370 l22,-22"/>
+    <path d="M112,414 l22,-22"/>
+    <path d="M112,458 l22,-22"/>
+  </g>
+</svg>
